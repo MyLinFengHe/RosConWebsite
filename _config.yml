@@ -76,4 +76,6 @@ early_registration_deadline: 'October 3rd, 2024'
 late_registration_start: 'October 15st, 2024'
 event_dates: 'November 1st to 3rd, 2024'
 roscon_city: 'Shanghai, China'
-preserve_file_times: false
+
+# 用于 GitHub Pages 部署
+baseurl: "/RosConWebsite"   # 注意：不要以 / 结尾，也不要包含协议或域名
