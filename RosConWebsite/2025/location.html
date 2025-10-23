@@ -1,0 +1,44 @@
+
+<div class="lang-en">
+
+  <h2 id="event-location">Event Location</h2>
+
+  <h3 id="roscon-china-2025-will-be-held-at-the-sofitel-shanghai-hongqiao-at-no-666-taihong-road-minhang-district-shanghai-china">ROSCon China 2025 will be held at the Sofitel Shanghai Hongqiao at No. 666 Taihong Road, Minhang District, Shanghai, China.</h3>
+
+</div>
+
+<div class="lang-zh" style="display:none">
+
+  <h2 id="section">活动地点</h2>
+
+  <h4 id="roscon-china-2025--666-">ROSCon China 2025 将于上海虹桥新华联索菲特大酒店举办，地址是中国上海市闵行区泰虹路 666 号。</h4>
+
+</div>
+
+<center>
+  <div id="amap-container" style="width: 800px; height: 600px; border: 1px solid #ccc;"></div>
+</center>
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=2.0&amp;key=00b2ad50f369aed0c29d1342a8277221"></script>
+
+<script type="text/javascript">
+  // 地点坐标已更新为上海虹桥新华联索菲特大酒店
+  const venueLngLat = [121.306156,31.200909];
+
+  var map = new AMap.Map('amap-container', {
+      resizeEnable: true,
+      center: venueLngLat, 
+      zoom: 16,
+      lang: 'en'
+  });
+
+  var marker = new AMap.Marker({
+      position: new AMap.LngLat(venueLngLat[0], venueLngLat[1]),
+      title: 'Sofitel Shanghai Hongqiao' // 标记标题已更新
+  });
+
+  map.add(marker);
+
+</script>
+
+<p><br /></p>

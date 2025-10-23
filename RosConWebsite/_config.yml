@@ -1,0 +1,79 @@
+---
+
+port: 3000
+host: 0.0.0.0
+safe: false
+
+
+### site serving configuration ###
+exclude:
+  - .gitignore,
+  - build_site.bash
+  - README.md
+  - test_site.bash
+  - upload.bash
+  - presentations
+  - scripts
+  - '20XX'
+  - '2024'
+
+  
+permalink: /:title ## disables post output
+timezone: null
+lsi: false
+markdown: kramdown
+
+
+### content configuration ###
+title:       "ROSCon China 2025"
+keywords:    "ROSCon China 2025, ROSCon 2025, robot, robotics, Robot Operating System, ROS"
+description: "The annual ROS developer conference for X."
+source_link: "http://localhost:3000"
+favicon:     "img/favicon.ico"
+touch_icon:  "img/apple-touch-icon.png"
+google_analytics_key: UA-????????-?? ## put YOUR key here to enable tracking! (blank to disable)
+
+
+### template colors, used site-wide via css ###
+colors:
+  black:     '#111111'
+  white:     '#f8f8f8'
+  blue:      '#49a7e9'
+  green:     '#9bcf2f'
+  purple:    '#4d235e'
+  orange:    '#fab125'
+  turquoise: '#0fbfcf'
+  logo_green: '#7F9686'
+  logo_orange: '#ED906E'
+  logo_yellow: '#F5CA85'
+  logo_purple: '#92468E'
+  logo_purple2: '#542762'
+  logo_red: '#d33033'
+
+
+# Output directory to match server directory
+destination: '2025'
+baseurl: '/2025'
+
+
+# variables used throughout the site for consistency.
+# also with an eye for avoiding copy and paste issues porting forward.
+nth_roscon: 'twelveth'
+roscon_year: '2025'
+
+cfp_date: 'September 20th, 2025'
+diversity_application_deadline: 'September 30th, 2025'
+workshop_submission_deadline: 'September 20th, 2025'
+
+cfp_date_zh: '2025年9月20日'
+diversity_application_deadline_zh: '2025年9月30日'
+workshop_submission_deadline_zh: '2025年9月20日'
+
+
+submission_deadline: 'September 9th, 2024'
+acceptance_date: 'September 17th, 2024'
+early_registration_deadline: 'October 3rd, 2024'
+late_registration_start: 'October 15st, 2024'
+event_dates: 'November 1st to 3rd, 2024'
+roscon_city: 'Shanghai, China'
+preserve_file_times: false
